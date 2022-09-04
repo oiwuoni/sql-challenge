@@ -45,7 +45,6 @@ create table salaries (
 	
 select * from salaries;
 
-drop table salaries;
 
 create table titles (
 	title_id varchar not null,
