@@ -1,9 +1,11 @@
+-- Creating a 'Departments' table for the corresponding CSV file. 
 create table departments (
 	dept_no varchar(255) not null primary key,
 	dept_name varchar(255) not null);
 	
 select * from departments;
 
+-- Creating a 'Dept_Emp' table for the corresponding CSV file. 
 create table dept_emp (
 	emp_no int not null,
 	dept_no varchar not null,
@@ -13,6 +15,7 @@ create table dept_emp (
 	
 select * from dept_emp;
 
+-- Creating a 'Dept_Manager' table for the corresponding CSV file.
 create table dept_manager (
 	dept_no varchar not null,
 	emp_no int not null,
@@ -21,7 +24,7 @@ create table dept_manager (
 	
 select * from dept_manager;
 
-
+-- Creating an 'Employees' table for the corresponding CSV file.
 create table employees (
 	emp_no int not null,
 	emp_title_id varchar not null,
@@ -38,6 +41,7 @@ ALTER DATABASE homework9_db SET datestyle TO "ISO, MDY";
 	
 select * from employees;
 
+-- Creating a 'Salaries' table for the corresponding CSV file.
 create table salaries (
 	emp_no int not null,
 	salary int not null,
@@ -45,7 +49,7 @@ create table salaries (
 	
 select * from salaries;
 
-
+-- Creating a 'Titles' table for the corresponding CSV file.
 create table titles (
 	title_id varchar not null,
 	title varchar not null,
